@@ -235,7 +235,7 @@ app/
 
 ## 📜 License
 
-This project is currently unlicensed. Add a LICENSE file if you want to open-source it under a specific license.
+MIT License. See LICENSE.
 
 ---
 
