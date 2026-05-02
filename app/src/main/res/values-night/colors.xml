@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors - Deep Blue (Night) -->
+    <color name="primary_night">#818CF8</color>
+    <color name="primary_dark_night">#6366F1</color>
+    <color name="primary_variant_night">#312E81</color>
+    <color name="primary_light_night">#1E1B4B</color>
+
+    <!-- Secondary Colors - Teal (Night) -->
+    <color name="secondary_night">#2DD4BF</color>
+    <color name="secondary_dark_night">#14B8A6</color>
+    <color name="secondary_variant_night">#134E4A</color>
+
+    <!-- Background Colors (Night) -->
+    <color name="background_primary_night">#0F172A</color>
+    <color name="background_secondary_night">#1E293B</color>
+    <color name="surface_night">#1E293B</color>
+    <color name="surface_variant_night">#334155</color>
+    <color name="surface_accent_night">#0D3D56</color>
+
+    <!-- Text Colors (Night) -->
+    <color name="text_primary_night">#F8FAFC</color>
+    <color name="text_secondary_night">#94A3B8</color>
+    <color name="text_hint_night">#64748B</color>
+
+    <!-- Divider (Night) -->
+    <color name="divider_night">#334155</color>
+</resources>

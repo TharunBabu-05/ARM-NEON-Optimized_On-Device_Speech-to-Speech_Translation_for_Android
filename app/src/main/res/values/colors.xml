@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors - Deep Blue -->
+    <color name="primary">#4F46E5</color>
+    <color name="primary_dark">#3730A3</color>
+    <color name="primary_variant">#C7D2FE</color>
+    <color name="primary_light">#E0E7FF</color>
+
+    <!-- Secondary Colors - Teal -->
+    <color name="secondary">#0D9488</color>
+    <color name="secondary_dark">#0F766E</color>
+    <color name="secondary_variant">#99F6E4</color>
+
+    <!-- Accent Colors -->
+    <color name="accent">#F59E0B</color>
+    <color name="accent_variant">#FDE68A</color>
+
+    <!-- Background Colors -->
+    <color name="background_primary">#F8FAFC</color>
+    <color name="background_secondary">#F1F5F9</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_variant">#F1F5F9</color>
+    <color name="surface_accent">#F0FDFA</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#1E293B</color>
+    <color name="text_secondary">#64748B</color>
+    <color name="text_hint">#94A3B8</color>
+    <color name="text_on_primary">#FFFFFF</color>
+
+    <!-- State Colors -->
+    <color name="error">#EF4444</color>
+    <color name="success">#22C55E</color>
+    <color name="warning">#F59E0B</color>
+
+    <!-- Other -->
+    <color name="divider">#E2E8F0</color>
+    <color name="overlay_background">#80000000</color>
+    <color name="ripple_color">#1A4F46E5</color>
+
+    <!-- White Variants -->
+    <color name="white">#FFFFFF</color>
+    <color name="white_70">#B3FFFFFF</color>
+    <color name="white_30">#4DFFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!-- Status Bar -->
+    <color name="status_bar_color">@color/primary</color>
+</resources>
