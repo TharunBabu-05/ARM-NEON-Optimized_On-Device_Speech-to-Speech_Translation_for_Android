@@ -2,11 +2,8 @@
   <img src="assets/hero.svg" width="1000" alt="Voice Translator banner" />
 </p>
 
-<h1 align="center">Voice Translator (English &lt;-&gt; Hindi)</h1>
-
-<p align="center">
-  On-device speech translation for Android with speech input, instant text translation, and voice playback.
-</p>
+<h1 align="center">Voice Translator</h1>
+<p align="center"><b>English &lt;-&gt; Hindi voice translation for Android, built with Kotlin and ML Kit</b></p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Platform-Android-3DDC84?style=flat-square&logo=android&logoColor=white" />
@@ -16,19 +13,81 @@
   <img src="https://img.shields.io/badge/Architecture-MVVM-0EA5E9?style=flat-square" />
 </p>
 
+<p align="center">
+  <a href="#-overview">Overview</a> •
+  <a href="#-architecture">Architecture</a> •
+  <a href="#-installation-guide">Install</a> •
+  <a href="#-usage-instructions">Usage</a> •
+  <a href="#-project-structure">Structure</a> •
+  <a href="#-roadmap">Roadmap</a>
+</p>
+
 ---
 
-## Highlights
+## 🚀 Overview
 
-- On-device translation with Google ML Kit (offline after initial model download)
-- Speech input via Android SpeechRecognizer with partial results
-- Text-to-speech playback with language-aware locale switching
-- MVVM with StateFlow-based UI state
-- Material 3 UI, Lottie listening animation, and quick actions (swap, copy, share)
+A polished Android voice translator that combines speech input, ML Kit translation, and text-to-speech playback in a single on-device experience. Translation models are cached locally after first download, so the app works offline for translation. Voice input uses Android SpeechRecognizer and may depend on device speech services.
+
+> **Why it matters:** Private, fast, and practical translation helps people communicate in real-world settings without relying on cloud translation APIs.
 
 ---
 
-## UI Preview
+## ✨ Key Features
+
+- **Bidirectional translation** between English and Hindi
+- **Voice input** with partial results and listening overlay
+- **Text-to-speech playback** with language-aware locale switching
+- **Swap languages** with instant UI updates
+- **Copy & share** translated text
+- **Material 3 UI** with light/dark theming and Lottie animation
+
+---
+
+## 🧠 How It Works
+
+1. User speaks or types in the source language.
+2. SpeechRecognizer produces text (partial + final results).
+3. TranslatorViewModel triggers ML Kit translation.
+4. UI updates in real time with loading and final output.
+5. TextToSpeech reads the translation aloud.
+
+> **Offline note:** Translation works offline after the model download completes. Speech recognition behavior can vary by device and may require network access.
+
+---
+
+## 🏗️ Architecture
+
+<p align="center">
+  <img src="https://via.placeholder.com/1200x520/0F172A/94A3B8?text=Architecture+Diagram+Placeholder" width="900" alt="Architecture diagram placeholder" />
+</p>
+
+```mermaid
+flowchart LR
+  Mic[Microphone] --> SR[SpeechRecognizer]
+  SR --> UI[MainActivity]
+  UI --> VM[TranslatorViewModel]
+  VM --> Repo[TranslationRepository]
+  Repo --> ML[ML Kit Translator]
+  ML --> VM
+  VM --> TTS[TextToSpeech]
+  TTS --> Speaker[Speaker]
+```
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Tools |
+|------|------|
+| Language | Kotlin, Coroutines, StateFlow |
+| UI | Material 3, View Binding, Lottie |
+| ML | Google ML Kit Translation |
+| Speech | SpeechRecognizer, TextToSpeech |
+| Build | Gradle (KTS), Android Studio |
+
+---
+
+## 📸 Demo / Screenshots
 
 <p align="center">
   <img src="assets/ui-demo.gif" width="720" alt="UI demo animation" />
@@ -41,68 +100,7 @@
 
 ---
 
-## Architecture
-
-This app follows MVVM and keeps the translation logic inside a repository. The UI layer (MainActivity) listens to a StateFlow, triggers translation, and controls speech input/output.
-
-```mermaid
-flowchart LR
-    Mic[Microphone] --> SR[SpeechRecognizer]
-    SR --> UI[MainActivity]
-    UI --> VM[TranslatorViewModel]
-    VM --> Repo[TranslationRepository]
-    Repo --> ML[ML Kit Translator]
-    ML --> VM
-    VM --> TTS[TextToSpeech]
-    TTS --> Speaker[Speaker]
-```
-
-### Key Components
-
-- MainActivity: speech input, text input, and UI actions (swap, copy, share, speak)
-- TranslatorViewModel: owns UI state and translation lifecycle
-- TranslationRepository: ML Kit model download and translation calls
-- Lottie overlay: listening animation during voice input
-
----
-
-## App Flow
-
-1. App starts and downloads English and Hindi translation models (Wi-Fi required on first run).
-2. User types or speaks; source text updates the StateFlow.
-3. Translate triggers ML Kit, updates UI with loading and results.
-4. Text-to-speech plays the translated result.
-
----
-
-## Tech Stack
-
-- Kotlin, Coroutines, StateFlow
-- AndroidX, Material 3, View Binding
-- ML Kit Translation API
-- Android SpeechRecognizer and TextToSpeech
-- Lottie animations
-
----
-
-## Requirements
-
-- Android 7.0 (API 24) or higher
-- Internet connection for initial model download
-- Microphone permission for voice input
-
----
-
-## Permissions
-
-| Permission | Purpose |
-|------------|---------|
-| INTERNET | Download translation models (first run) |
-| RECORD_AUDIO | Voice input |
-
----
-
-## Build and Run
+## ⚙️ Installation Guide
 
 1. Clone the repository:
 
@@ -111,7 +109,7 @@ git clone https://github.com/TharunBabu-05/ARM-NEON-Optimized_On-Device_Speech-t
 ```
 
 2. Open in Android Studio (Hedgehog or newer)
-3. Sync Gradle and run the app on a device
+3. Sync Gradle and run on an Android device
 
 ### Build Debug APK
 
@@ -125,7 +123,17 @@ APK output:
 
 ---
 
-## Project Structure
+## ▶️ Usage Instructions
+
+- Tap **Voice** to start listening
+- Speak in the selected language
+- Tap **Translate** to get results
+- Tap **Speaker** to listen to the translation
+- Use **Swap** to switch languages instantly
+
+---
+
+## 📂 Project Structure
 
 ```
 app/
@@ -154,16 +162,126 @@ app/
 
 ---
 
-## Notes
+## 🔌 API / Modules
 
-- Translation models are downloaded on first launch and cached locally.
-- Voice input is optional; text translation works without microphone permission.
-- The listening overlay uses a Lottie animation from res/raw.
+| Module | Responsibility |
+|--------|----------------|
+| TranslationRepository | Model download + translation calls |
+| TranslatorViewModel | UI state, translation flow, model readiness |
+| TranslatorUiState | StateFlow-backed UI state |
+| MainActivity | Speech input, UI actions, TTS output |
+| SplashActivity | Branded splash and entry flow |
 
 ---
 
-## Acknowledgments
+## 📊 Performance / Results
+
+| Metric | Status |
+|--------|--------|
+| Translation latency | TBD (varies by device) |
+| Model download size | ML Kit models (~30MB each, once) |
+| Offline translation | Supported after download |
+
+---
+
+## 🧭 Comparison (On-device vs Cloud)
+
+| Capability | This App | Typical Cloud Translator |
+|------------|----------|--------------------------|
+| Privacy | On-device after download | Server-side processing |
+| Offline translation | Yes | No |
+| Network dependency | Limited | Required |
+| Latency | Low after download | Variable |
+
+---
+
+## 🌍 Real-world Applications
+
+- Travel and navigation
+- Education and language learning
+- Workplace collaboration
+- Customer support kiosks
+- Accessibility and assisted communication
+
+---
+
+## 💼 Recruiter-Friendly Highlights
+
+- MVVM architecture with StateFlow-driven UI
+- Integration of Android SpeechRecognizer + TextToSpeech
+- ML Kit translation with model lifecycle management
+- Clean Material 3 UI with custom components
+- Coroutines for async translation pipeline
+
+---
+
+## 🧪 Roadmap
+
+- Add more languages through ML Kit selection
+- Improve offline speech recognition support
+- Add waveform visualization while listening
+- Explore device-specific acceleration (NNAPI / ARM optimizations)
+
+---
+
+## 🤝 Contributing Guidelines
+
+1. Fork the repo
+2. Create a feature branch
+3. Make changes with clear commit messages
+4. Submit a pull request with screenshots or notes
+
+---
+
+## 📜 License
+
+This project is currently unlicensed. Add a LICENSE file if you want to open-source it under a specific license.
+
+---
+
+## 🙌 Acknowledgements
 
 - Google ML Kit Translation
 - Material Design 3
-- Lottie for animations
+- Lottie animations
+
+---
+
+## 📬 Contact / Author
+
+- GitHub: https://github.com/TharunBabu-05
+
+---
+
+## 📈 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=TharunBabu-05&show_icons=true&theme=transparent" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=TharunBabu-05&layout=compact&theme=transparent" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=TharunBabu-05&theme=github-compact" />
+</p>
+
+---
+
+<details>
+  <summary><b>Implementation Notes</b></summary>
+  <br />
+  <ul>
+    <li>Translation models are downloaded on first launch and cached locally.</li>
+    <li>Voice input uses Android SpeechRecognizer and may rely on device services.</li>
+    <li>The listening overlay uses a Lottie animation in res/raw.</li>
+  </ul>
+</details>
+
+<details>
+  <summary><b>Why This Project Matters</b></summary>
+  <br />
+  <ul>
+    <li>Shows end-to-end on-device ML integration.</li>
+    <li>Demonstrates speech UX design and state management.</li>
+    <li>Highlights Android best practices in a production-style app.</li>
+  </ul>
+</details>
