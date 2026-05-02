@@ -22,6 +22,10 @@
   <a href="#-roadmap">Roadmap</a>
 </p>
 
+<p align="center">
+  <img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/9be4d344-6782-461a-b5a6-32a07bf7b34e" width="520" alt="Animated hello" />
+</p>
+
 ---
 
 ## 🚀 Overview
@@ -88,6 +92,10 @@ flowchart LR
 ---
 
 ## 📸 Demo / Screenshots
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/215768208-3bf3dda8-eeea-40ee-a58b-f5ac529685bf.gif" width="720" alt="Android demo placeholder" />
+</p>
 
 <p align="center">
   <img src="assets/ui-demo.gif" width="720" alt="UI demo animation" />
