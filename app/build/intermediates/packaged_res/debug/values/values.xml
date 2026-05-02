@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="accent">#F59E0B</color>
+    <color name="accent_variant">#FDE68A</color>
+    <color name="background_primary">#F8FAFC</color>
+    <color name="background_secondary">#F1F5F9</color>
+    <color name="black">#000000</color>
+    <color name="divider">#E2E8F0</color>
+    <color name="error">#EF4444</color>
+    <color name="overlay_background">#80000000</color>
+    <color name="primary">#4F46E5</color>
+    <color name="primary_dark">#3730A3</color>
+    <color name="primary_light">#E0E7FF</color>
+    <color name="primary_variant">#C7D2FE</color>
+    <color name="ripple_color">#1A4F46E5</color>
+    <color name="secondary">#0D9488</color>
+    <color name="secondary_dark">#0F766E</color>
+    <color name="secondary_variant">#99F6E4</color>
+    <color name="status_bar_color">@color/primary</color>
+    <color name="success">#22C55E</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_accent">#F0FDFA</color>
+    <color name="surface_variant">#F1F5F9</color>
+    <color name="text_hint">#94A3B8</color>
+    <color name="text_on_primary">#FFFFFF</color>
+    <color name="text_primary">#1E293B</color>
+    <color name="text_secondary">#64748B</color>
+    <color name="warning">#F59E0B</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_30">#4DFFFFFF</color>
+    <color name="white_70">#B3FFFFFF</color>
+    <string name="app_name">Voice Translator</string>
+    <string name="cd_clear_text">Clear text</string>
+    <string name="cd_copy_translation">Copy translation</string>
+    <string name="cd_share_translation">Share translation</string>
+    <string name="cd_speak_translation">Speak translation</string>
+    <string name="cd_swap_languages">Swap languages</string>
+    <string name="cd_voice_input">Voice input</string>
+    <string name="clear">Clear</string>
+    <string name="copied_to_clipboard">Copied to clipboard</string>
+    <string name="copy">Copy</string>
+    <string name="downloading_models">Downloading translation models…</string>
+    <string name="english">English</string>
+    <string name="error_no_match">Couldn\'t recognize speech. Please try again.</string>
+    <string name="error_timeout">Speech recognition timed out</string>
+    <string name="error_voice_input">Voice input error. Please try again.</string>
+    <string name="hindi">हिन्दी</string>
+    <string name="hint_enter_text">Enter text or use voice input…</string>
+    <string name="hint_translation_appear">Translation will appear here</string>
+    <string name="language_not_supported">This language is not supported for speech</string>
+    <string name="listening">Listening…</string>
+    <string name="models_ready">Translation models ready</string>
+    <string name="nothing_to_copy">Nothing to copy</string>
+    <string name="nothing_to_share">Nothing to share</string>
+    <string name="nothing_to_speak">Nothing to speak</string>
+    <string name="permission_denied">Microphone permission is required for voice input</string>
+    <string name="processing">Processing…</string>
+    <string name="recognizing">Recognizing speech…</string>
+    <string name="share">Share</string>
+    <string name="share_translation">Share Translation</string>
+    <string name="speak_now">Speak now in the selected language</string>
+    <string name="stop">Stop</string>
+    <string name="swap">Swap</string>
+    <string name="tagline">English ↔ Hindi Translation</string>
+    <string name="translate">Translate</string>
+    <string name="translation_error">Translation failed. Please try again.</string>
+    <string name="tts_error">Text-to-speech error occurred</string>
+    <string name="tts_init_failed">Failed to initialize text-to-speech</string>
+    <string name="tts_not_ready">Text-to-speech is not ready</string>
+    <style name="ShapeAppearance.VoiceTranslator.Card" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">24dp</item>
+    </style>
+    <style name="ShapeAppearance.VoiceTranslator.Circle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="ShapeAppearance.VoiceTranslator.RoundedButton" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+    <style name="TextAppearance.VoiceTranslator.Body" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingMultiplier">1.4</item>
+    </style>
+    <style name="TextAppearance.VoiceTranslator.Caption" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textColor">@color/text_hint</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="TextAppearance.VoiceTranslator.Headline" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="TextAppearance.VoiceTranslator.Label" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.1</item>
+    </style>
+    <style name="TextAppearance.VoiceTranslator.Title" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="Theme.VoiceTranslator" parent="Theme.Material3.Light.NoActionBar">
+        
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorPrimaryVariant">@color/primary_variant</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary_variant</item>
+        <item name="colorOnSecondary">@color/white</item>
+        
+        
+        <item name="android:colorBackground">@color/background_primary</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorSurfaceVariant">@color/surface_variant</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary</item>
+        
+        
+        <item name="colorError">@color/error</item>
+        <item name="colorOnError">@color/white</item>
+        
+        
+        <item name="android:statusBarColor">@color/background_primary</item>
+        <item name="android:windowLightStatusBar" ns1:targetApi="m">true</item>
+        <item name="android:navigationBarColor">@color/background_primary</item>
+        <item name="android:windowLightNavigationBar" ns1:targetApi="o_mr1">true</item>
+        
+        
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.VoiceTranslator.Splash" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/primary</item>
+        <item name="android:navigationBarColor">@color/primary</item>
+        <item name="android:windowLightStatusBar" ns1:targetApi="m">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Widget.VoiceTranslator.LanguageButton" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="iconTint">@color/primary</item>
+        <item name="iconPadding">8dp</item>
+        <item name="iconSize">20dp</item>
+        <item name="backgroundTint">@color/surface</item>
+        <item name="rippleColor">@color/ripple_color</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.VoiceTranslator.RoundedButton</item>
+    </style>
+</resources>

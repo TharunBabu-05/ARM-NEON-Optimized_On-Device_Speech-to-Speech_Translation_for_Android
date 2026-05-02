@@ -1,0 +1,66 @@
+[
+    {
+        "merged": "com.voicetranslator.app-merged_res-42:/drawable_ic_volume.xml.flat",
+        "source": "com.voicetranslator.app-main-44:/drawable/ic_volume.xml"
+    },
+    {
+        "merged": "com.voicetranslator.app-merged_res-42:/drawable_ic_stop.xml.flat",
+        "source": "com.voicetranslator.app-main-44:/drawable/ic_stop.xml"
+    },
+    {
+        "merged": "com.voicetranslator.app-merged_res-42:/drawable_ic_copy.xml.flat",
+        "source": "com.voicetranslator.app-main-44:/drawable/ic_copy.xml"
+    },
+    {
+        "merged": "com.voicetranslator.app-merged_res-42:/drawable_ic_swap.xml.flat",
+        "source": "com.voicetranslator.app-main-44:/drawable/ic_swap.xml"
+    },
+    {
+        "merged": "com.voicetranslator.app-merged_res-42:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.voicetranslator.app-main-44:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.voicetranslator.app-merged_res-42:/drawable_ic_language.xml.flat",
+        "source": "com.voicetranslator.app-main-44:/drawable/ic_language.xml"
+    },
+    {
+        "merged": "com.voicetranslator.app-merged_res-42:/drawable_ic_app_logo.xml.flat",
+        "source": "com.voicetranslator.app-main-44:/drawable/ic_app_logo.xml"
+    },
+    {
+        "merged": "com.voicetranslator.app-merged_res-42:/drawable_ic_close.xml.flat",
+        "source": "com.voicetranslator.app-main-44:/drawable/ic_close.xml"
+    },
+    {
+        "merged": "com.voicetranslator.app-merged_res-42:/raw_listening_animation.json.flat",
+        "source": "com.voicetranslator.app-main-44:/raw/listening_animation.json"
+    },
+    {
+        "merged": "com.voicetranslator.app-merged_res-42:/drawable_ic_share.xml.flat",
+        "source": "com.voicetranslator.app-main-44:/drawable/ic_share.xml"
+    },
+    {
+        "merged": "com.voicetranslator.app-merged_res-42:/layout_activity_main.xml.flat",
+        "source": "com.voicetranslator.app-main-44:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.voicetranslator.app-merged_res-42:/drawable_ic_translate.xml.flat",
+        "source": "com.voicetranslator.app-main-44:/drawable/ic_translate.xml"
+    },
+    {
+        "merged": "com.voicetranslator.app-merged_res-42:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.voicetranslator.app-main-44:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.voicetranslator.app-merged_res-42:/drawable_ic_mic.xml.flat",
+        "source": "com.voicetranslator.app-main-44:/drawable/ic_mic.xml"
+    },
+    {
+        "merged": "com.voicetranslator.app-merged_res-42:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.voicetranslator.app-main-44:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.voicetranslator.app-merged_res-42:/layout_activity_splash.xml.flat",
+        "source": "com.voicetranslator.app-main-44:/layout/activity_splash.xml"
+    }
+]
